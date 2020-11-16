@@ -18,7 +18,7 @@
 
 <?php
 
-include "dbConn.php"; // Using database connection file here
+include "show.php"; // Using database connection file here
 
 $records = mysqli_query($db,"select * from tblemp"); // fetch data from database
 
