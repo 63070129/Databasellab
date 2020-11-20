@@ -6,7 +6,7 @@
 	$sql = 'SELECT * FROM guestbook WHERE ID = '.$id.'';
 	$query = mysqli_query($conn, $sql);
 	if(!$query) {
-		header('Location: index.php');
+		header('Location: show.php');
 	}
 	else {
 		$data = mysqli_fetch_assoc($query);
@@ -49,7 +49,7 @@
 							</div>
 							<div class="text-center">
 								<button type="submit" class="btn btn-sm btn-success my-3 font-weight-bold">SAVE</button>
-								<a class="btn btn-sm btn-dark my-3" href="index.php">CANCLE</a>
+								<a class="btn btn-sm btn-dark my-3" href="show.php">CANCLE</a>
 							</div>
 						</form>
 					</div>
