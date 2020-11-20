@@ -3,7 +3,7 @@
 
 	$id = $_GET['ID'];
 
-	$sql = 'SELECT * FROM guestbook WHERE ID = '.$id.'';
+	$sql = 'SELECT * FROM guestbooks WHERE ID = '.$id.'';
 	$query = mysqli_query($conn, $sql);
 	if(!$query) {
 		header('Location: show.php');
